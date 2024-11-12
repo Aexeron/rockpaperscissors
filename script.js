@@ -1,5 +1,5 @@
 // script.js
-
+const btn1 = document.querySelector("#btn1")
 let computeresult = 0
 let humanchoice = 0
 let winner = 0
@@ -67,11 +67,9 @@ if (computeresult == humanchoice) {
 
 
 
-  
-humanchoice = parseInt(prompt("Enter either Rock, Paper or Scissors. Rock= 1 Paper= 2 Scissors= 3"))
-gethumanchoice(0)
+btn1.onclick = () => humanchoice = '1';
+console.log(gethumanchoice())
 
-console.log(humanchoice)
 console.log(computerchoice(0))
 console.log(findwinner(0))
 
