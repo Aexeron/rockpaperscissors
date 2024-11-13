@@ -66,10 +66,24 @@ if (computeresult == humanchoice) {
    
 
 
+btn1.onclick = () => humanchoice = 'rock';
+btn1.onmousedown = () => console.log(humanchoice)
+btn1.click = ( ) => console.log(computerchoice())
+btn1.addEventListener('click', () => {
+    console.log(computerchoice());
+  });
+  btn1.addEventListener('click', () => {
+    console.log(findwinner());
+  });
 
-btn1.onclick = () => humanchoice = '1';
+
 console.log(gethumanchoice())
 
-console.log(computerchoice(0))
-console.log(findwinner(0))
+console.log(computerchoice())
+console.log(findwinner())
+
+
+
+
+
 
