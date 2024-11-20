@@ -1,0 +1,18 @@
+/*style.css*/
+.instructions{
+    display: flex;
+
+}
+p, h1 {
+    flex: 1;
+}
+h1 {
+    font-size: 2px;
+}
+.game{
+    display:flex;
+}
+#btn1, #btn2, #btn3{
+    flex:1;
+    height: 50px;
+}
