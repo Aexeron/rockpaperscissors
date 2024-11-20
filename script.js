@@ -1,5 +1,7 @@
 // script.js
 const btn1 = document.querySelector("#btn1")
+const btn2 = document.querySelector("#btn2")
+const btn3 = document.querySelector("#btn3")
 let computeresult = 0
 let humanchoice = 0
 let winner = 0
@@ -55,16 +57,10 @@ if (computeresult == humanchoice) {
     return "you won"
 }
    
-    } 
+    }   
 
 
-
-    
-
-   
-    
-   
-
+// for rock
 
 btn1.onclick = () => humanchoice = 'rock';
 btn1.onmousedown = () => console.log(humanchoice)
@@ -75,12 +71,29 @@ btn1.addEventListener('click', () => {
   btn1.addEventListener('click', () => {
     console.log(findwinner());
   });
+  
 
+// for paper
+btn2.onclick = () => humanchoice = 'paper';
+btn2.onmousedown = () => console.log(humanchoice)
+btn2.click = ( ) => console.log(computerchoice())
+btn2.addEventListener('click', () => {
+    console.log(computerchoice());
+  });
+btn2.addEventListener('click', () => {
+    console.log(findwinner());
+  });
 
-console.log(gethumanchoice())
-
-console.log(computerchoice())
-console.log(findwinner())
+  //scissors
+  btn2.onclick = () => humanchoice = 'scissors';
+  btn2.onmousedown = () => console.log(humanchoice)
+  btn2.click = ( ) => console.log(computerchoice())
+  btn2.addEventListener('click', () => {
+      console.log(computerchoice());
+    });
+  btn2.addEventListener('click', () => {
+      console.log(findwinner());
+    });
 
 
 
