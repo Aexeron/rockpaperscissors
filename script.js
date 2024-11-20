@@ -85,13 +85,13 @@ btn2.addEventListener('click', () => {
   });
 
   //scissors
-  btn2.onclick = () => humanchoice = 'scissors';
-  btn2.onmousedown = () => console.log(humanchoice)
-  btn2.click = ( ) => console.log(computerchoice())
-  btn2.addEventListener('click', () => {
+  btn3.onclick = () => humanchoice = 'scissors';
+  btn3.onmousedown = () => console.log(humanchoice)
+  btn3.click = ( ) => console.log(computerchoice())
+  btn3.addEventListener('click', () => {
       console.log(computerchoice());
     });
-  btn2.addEventListener('click', () => {
+  btn3.addEventListener('click', () => {
       console.log(findwinner());
     });
 
